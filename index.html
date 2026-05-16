@@ -1,58 +1,271 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diego Rocha - Portfólio</title>
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/stylegrid.css">
-
-    <!-- Meta Tags Open Graph para Redes Sociais -->
-<!-- MS, fb & Whatsapp -->
-
-<!-- MS Tile - for Microsoft apps-->
-<meta name="msapplication-TileImage" content="./assets/port.png">    
-
-<!-- fb & Whatsapp -->
-<meta property="og:site_name" content="The Rock Photo Studio">
-<meta property="og:title" content="Diego Rocha Oliveira - Portifólio">
-<meta property="og:description" content="Aqui alguns projetos em que gostei de atuar">
-
-<!-- Image to display -->
-<meta property="og:image" content="./assets/port.png">
-
-<meta property="og:type" content="website" />
-<meta property="og:image:type" content="image/jpeg">
-
-<meta property="og:image:width" content="300">
-<meta property="og:image:height" content="300">
-
-<!-- Website to visit when clicked in fb or WhatsApp-->
-<meta property="og:url" content="https://diegotec.site">
+  <title>Diego Rocha — Developer & Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body class="dark">
 
-  <!-- Header / Menu -->
-  <header class="cabecalho">
-    <a href="#" class="cabecalho__logo">
-      <img src="./assets/rock_ai_red.png" alt="ROCK AI" width="50">
+<!-- ── NAV ──────────────────────────────────────────────────── -->
+<nav>
+  <a href="#" class="nav-logo">diego.tec</a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#about" data-i18n="nav_about">Sobre</a></li>
+      <li><a href="#projects" data-i18n="nav_projects">Projetos</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
+    </ul>
+    <div class="lang-switch">
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn active" data-lang="pt">PT</button>
+      <button class="lang-btn" data-lang="es">ES</button>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── MOBILE MENU ───────────────────────────────────────────── -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about"    data-i18n="nav_about"    onclick="closeMobile()">Sobre</a>
+  <a href="#projects" data-i18n="nav_projects" onclick="closeMobile()">Projetos</a>
+  <a href="#contact"  data-i18n="nav_contact"  onclick="closeMobile()">Contato</a>
+  <div class="mobile-bottom">
+    <div class="lang-switch">
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn active" data-lang="pt">PT</button>
+      <button class="lang-btn" data-lang="es">ES</button>
+    </div>
+    <button class="theme-toggle" id="themeToggleMob">🌙</button>
+  </div>
+</div>
+
+<!-- ── HERO ──────────────────────────────────────────────────── -->
+<div class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-tag" data-i18n="hero_tag">Disponível para novos desafios</div>
+    <h1 class="hero-name">Diego<br><span class="accent">Rocha</span></h1>
+    <p class="hero-title" id="typewriter"></p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary" data-i18n="hero_cta1">Ver projetos →</a>
+      <a href="https://www.linkedin.com/in/diego-tec/" target="_blank" class="btn btn-outline">LinkedIn ↗</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span data-i18n="scroll">rolar</span>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ── ABOUT ─────────────────────────────────────────────────── -->
+<section class="section-wrap" id="about">
+  <div class="section-label" data-i18n="about_label">Sobre mim</div>
+  <h2 class="section-title reveal" data-i18n="about_title_html">Desenvolvedor &amp;<br>Solucionador de Problemas</h2>
+
+  <div class="about-grid">
+    <!-- Text -->
+    <div class="about-text reveal">
+      <p data-i18n="about_p1">Sou um desenvolvedor movido pela crença de que <strong>grande software nasce na intersecção entre curiosidade e disciplina</strong>. Minha base abrange linguagens de backend — Java, Python e Go — cada uma escolhida com propósito: Java para robustez e arquitetura empresarial, Python para pipelines de dados e experimentos com IA, Go para desempenho e concorrência limpa.</p>
+      <p data-i18n="about_p2">Além do código, sou profundamente interessado na <strong>camada de infraestrutura</strong> — como sistemas se comunicam, escalam e falham graciosamente. Me importo com o quadro completo: do primeiro commit ao container rodando em produção.</p>
+      <p data-i18n="about_p3">Atualmente, estudo ativamente o <strong>desenvolvimento com IA</strong> — não apenas como usuário de ferramentas, mas como alguém que quer entender a mecânica: como modelos são construídos, ajustados e integrados em produtos reais. Acredito que a próxima geração de software será feita por devs que pensam em engenharia tradicional e machine learning.</p>
+      <p data-i18n="about_p4">Tenho também uma paixão que une técnica e criatividade: o <strong>desenvolvimento de jogos</strong>. Criar um jogo do zero — física, lógica, experiência do jogador — é um dos maiores desafios que a programação oferece, e é exatamente o tipo de problema que me faz querer ir mais fundo.</p>
+      <p data-i18n="about_p5">Não busco tarefas fáceis. Busco <strong>problemas difíceis, ambientes desconhecidos e desafios que forçam crescimento real</strong>.</p>
+      <div class="about-skills">
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Go</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">HTML5 Canvas</span>
+        <span class="skill-tag">Game Dev</span>
+        <span class="skill-tag">AI / LLMs</span>
+        <span class="skill-tag">Infrastructure</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">SQL</span>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="about-cards reveal">
+      <div class="about-card">
+        <span class="card-icon">⚙️</span>
+        <div class="card-title" data-i18n="card1_title">Linguagens</div>
+        <div class="card-body">
+          <span class="hi">Java</span> — Enterprise &amp; Backend<br>
+          <span class="hi">Python</span> — IA, Data &amp; Scripts<br>
+          <span class="hi">Go</span> — Performance &amp; Concorrência<br>
+          <span class="hi">JS</span> — Frontend &amp; Games
+        </div>
+      </div>
+      <div class="about-card">
+        <span class="card-icon">🧠</span>
+        <div class="card-title" data-i18n="card2_title">IA & Pesquisa</div>
+        <div class="card-body" data-i18n="card2_body">Estudando integração de modelos, APIs de LLMs, engenharia de prompts e desenvolvimento assistido por IA.</div>
+      </div>
+      <div class="about-card">
+        <span class="card-icon">🏗️</span>
+        <div class="card-title" data-i18n="card3_title">Infraestrutura</div>
+        <div class="card-body" data-i18n="card3_body">Linux, Docker, cloud, redes, CI/CD. Me importo com como as coisas rodam em produção — não só como são escritas.</div>
+      </div>
+      <div class="about-card">
+        <span class="card-icon">⚡</span>
+        <div class="card-title" data-i18n="card4_title">Backend</div>
+        <div class="card-body" data-i18n="card4_body">APIs REST, arquitetura de sistemas, bancos SQL, performance e segurança. O backend é onde a lógica vive.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── PROJECTS ───────────────────────────────────────────────── -->
+<section class="section-wrap" id="projects">
+  <div class="section-label" data-i18n="projects_label">Portfólio</div>
+  <h2 class="section-title reveal" data-i18n="projects_title_html">Projetos<br>em Destaque</h2>
+
+  <div class="projects-grid">
+
+    <!-- Card 1: Space Shooter -->
+    <a href="space/space.html" target="_blank" class="project-card featured reveal">
+      <div class="card-gif" id="gif-zone-1">
+        <div class="gif-drop-zone" id="gif-dz-1" onclick="triggerUpload(1)">
+          <div class="gif-drop-icon">▶</div>
+          <span class="gif-drop-label" data-i18n="gif_upload">Carregar GIF</span>
+          <span class="gif-drop-sub">clique ou arraste · gif / webp / png</span>
+        </div>
+        <img id="gif-img-1" src="" alt="" style="display:none; width:100%; height:100%; object-fit:cover;">
+        <div class="gif-x" id="gif-x-1" onclick="removeGif(event, 1)">✕</div>
+        <input type="file" id="gif-file-1" accept="image/*" style="display:none;" onchange="loadGif(1, this)">
+      </div>
+      <div class="card-body-inner">
+        <div class="featured-badge">✦ <span data-i18n="featured">Destaque</span></div>
+        <div class="project-number">01 — Game</div>
+        <div class="project-name">Space Shooter</div>
+        <p class="project-desc" data-i18n="proj1_desc">Jogo de nave espacial totalmente funcional feito do zero em JavaScript puro com HTML5 Canvas. Animações fluidas, controles, inimigos e pontuação — sem nenhuma biblioteca externa.</p>
+        <div class="card-footer">
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5 Canvas</span>
+            <span class="tag">Game Dev</span>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+      </div>
     </a>
-    <button class="cabecalho__toggle" aria-label="Menu">&#9776;</button>
-    <nav class="cabecalho__menu">
-      <a href="#" class="cabecalho__menu__link" data-page="home">Início</a>
-      <a href="#" class="cabecalho__menu__link" data-page="projects">Projetos</a>
-      <a href="#" class="cabecalho__menu__link" data-page="about">Sobre</a>
-    </nav>
-  </header>
 
-  <main id="main-content">
-  </main>
+    <!-- Card 2: Rock AI -->
+    <a href="rocks/rocks_ai_overview.html" target="_blank" class="project-card reveal">
+      <div class="card-gif" id="gif-zone-2">
+        <div class="gif-drop-zone" id="gif-dz-2" onclick="triggerUpload(2)">
+          <div class="gif-drop-icon">▶</div>
+          <span class="gif-drop-label" data-i18n="gif_upload">Carregar GIF</span>
+          <span class="gif-drop-sub">clique ou arraste · gif / webp / png</span>
+        </div>
+        <img id="gif-img-2" src="" alt="" style="display:none; width:100%; height:100%; object-fit:cover;">
+        <div class="gif-x" id="gif-x-2" onclick="removeGif(event, 2)">✕</div>
+        <input type="file" id="gif-file-2" accept="image/*" style="display:none;" onchange="loadGif(2, this)">
+      </div>
+      <div class="card-body-inner">
+        <div class="project-number">02 — AI</div>
+        <div class="project-name">Rock AI Overview</div>
+        <p class="project-desc" data-i18n="proj2_desc">Exploração de IA aplicada à análise e classificação de rochas. Une inteligência visual e domínios científicos, mostrando como machine learning pode atender campos especializados.</p>
+        <div class="card-footer">
+          <div class="project-tags">
+            <span class="tag">Inteligência Artificial</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">CSS3</span>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+      </div>
+    </a>
 
-  <footer class="rodape">
-    <p>Desenvolvido por Diego.</p>
-  </footer>
+    <!-- Card 3: Em breve (editável) -->
+    <div class="project-card reveal">
+      <div class="card-gif" id="gif-zone-3">
+        <div class="gif-drop-zone" id="gif-dz-3" onclick="triggerUpload(3)">
+          <div class="gif-drop-icon">▶</div>
+          <span class="gif-drop-label" data-i18n="gif_upload">Carregar GIF</span>
+          <span class="gif-drop-sub">clique ou arraste · gif / webp / png</span>
+        </div>
+        <img id="gif-img-3" src="" alt="" style="display:none; width:100%; height:100%; object-fit:cover;">
+        <div class="gif-x" id="gif-x-3" onclick="removeGif(event, 3)">✕</div>
+        <input type="file" id="gif-file-3" accept="image/*" style="display:none;" onchange="loadGif(3, this)">
+      </div>
+      <div class="card-body-inner">
+        <div class="project-number" data-i18n="proj3_num">03 — Em breve</div>
+        <div class="project-name"
+             contenteditable="true" spellcheck="false"
+             style="outline:none; border-bottom:1px dashed var(--border2);"
+             title="Clique para editar"
+             data-i18n="proj3_name">Próximo Projeto</div>
+        <p class="project-desc"
+           contenteditable="true" spellcheck="false"
+           style="outline:none;"
+           title="Clique para editar"
+           data-i18n="proj3_desc">Adicione aqui a descrição. Clique para editar o texto e carregue um GIF acima.</p>
+        <div class="card-footer">
+          <div class="project-tags">
+            <span class="tag" data-i18n="wip">Em desenvolvimento</span>
+          </div>
+          <button class="gif-upload-btn" data-i18n="gif_btn" onclick="triggerUpload(3)">+ gif / imagem</button>
+        </div>
+      </div>
+    </div>
 
-  <script src="js/app.js"></script>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── CONTACT ────────────────────────────────────────────────── -->
+<div class="contact-section" id="contact">
+  <div class="section-label" data-i18n="contact_label">Contato</div>
+  <h2 class="section-title reveal" style="margin-bottom:.5rem" data-i18n="contact_title_html">Vamos construir<br>algo juntos?</h2>
+  <p style="color:var(--muted); font-size:.93rem; margin-bottom:.5rem;" data-i18n="contact_sub">Aberto a projetos freelance, colaborações e oportunidades.</p>
+  <a href="mailto:diego.tec.teste@gmail.com" class="contact-email">diego.tec.teste@gmail.com</a>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/diego-tec/" target="_blank" class="social-link">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7H10V9h4v2a6 6 0 0 1 2-3z"/>
+        <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+      </svg>
+      LinkedIn
+    </a>
+    <a href="https://github.com/diegpo" target="_blank" class="social-link">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+      </svg>
+      GitHub
+    </a>
+    <a href="https://diegotec.site/" target="_blank" class="social-link">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="2" y1="12" x2="22" y2="12"/>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+      </svg>
+      diegotec.site
+    </a>
+  </div>
+</div>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────── -->
+<footer>
+  <span class="footer-mono">© 2025 Diego Rocha Oliveira</span>
+  <span class="footer-mono" style="color:var(--accent)">Made with curiosity</span>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
