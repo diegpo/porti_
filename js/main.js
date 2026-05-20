@@ -16,7 +16,7 @@ const T = {
     projects_label: 'Portfolio', projects_title_html: 'Featured<br>Projects', featured: 'Featured',
     proj1_desc: 'Fully functional spaceship game built from scratch using pure JavaScript with HTML5 Canvas. Smooth animations, controls, enemies, and scoring — without any external libraries.',
     proj2_desc: 'Exploration of AI applied to infrastructure analysis in Protheus environments. Combines visual intelligence with practical domains, showing how machine learning can support everyday operations.',
-    proj3_num: '03 — Coming Soon', proj3_name: 'Next Project', proj3_desc: 'I'm thinking about something, perhaps in ADVPL and Angular.', wip: 'Work in progress',
+    proj3_num: '03 — Coming Soon', proj3_name: 'Next Project', proj3_desc: 'I m thinking about something, perhaps in ADVPL and Angular', wip: 'Work in progress',
     gif_upload: 'Upload GIF', gif_btn: '+ gif / image',
     contact_label: 'Contact', contact_title_html: 'Let’s build<br>something together?', contact_sub: 'Open to freelance projects, collaborations, and opportunities.',
   },
@@ -36,7 +36,8 @@ const T = {
     projects_label: 'Portfólio', projects_title_html: 'Projetos<br>em Destaque', featured: 'Destaque',
     proj1_desc: 'Jogo de nave espacial totalmente funcional feito do zero em JavaScript puro com HTML5 Canvas. Animações fluidas, controles, inimigos e pontuação — sem nenhuma biblioteca externa.',
     proj2_desc: 'Exploração de IA aplicada à análise aplicada na infraestrutura Protheus. Une inteligência visual e domínios práticos, mostrando como machine learning pode atender o dia dia.',
-    proj3_num: '03 — Em breve', proj3_name: 'Próximo Projeto', proj3_desc: 'Estou pensando em algo, em ADVPL talevz e Angular', gif_upload: 'Carregar GIF', gif_btn: '+ gif / imagem',
+    proj3_num: '03 — Em breve', proj3_name: 'Próximo Projeto', proj3_desc: 'Estou pensando em algo, em ADVPL talevz e Angular.', wip: 'Em desenvolvimento',
+    gif_upload: 'Carregar GIF', gif_btn: '+ gif / imagem',
     contact_label: 'Contato', contact_title_html: 'Vamos construir<br>algo juntos?', contact_sub: 'Aberto a projetos freelance, colaborações e oportunidades.',
   },
   es: {
