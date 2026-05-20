@@ -136,33 +136,26 @@
 
   <div class="projects-grid">
 
-    <!-- Card 1: Space Shooter -->
-    <a href="space/space.html" target="_blank" class="project-card featured reveal">
-      <div class="card-gif" id="gif-zone-1">
-        <div class="gif-drop-zone" id="gif-dz-1" onclick="triggerUpload(1)">
-          <div class="gif-drop-icon">▶</div>
-          <span class="gif-drop-label" data-i18n="gif_upload">Carregar GIF</span>
-          <span class="gif-drop-sub">clique ou arraste · gif / webp / png</span>
+  <!-- Card 1: Space Shooter -->
+  <a href="space/space.html" target="_blank" class="project-card featured reveal">
+    <div class="card-gif" id="gif-zone-1">
+      <img src="assets/spaceshooter.png" alt="Space Shooter" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+    <div class="card-body-inner">
+      <div class="featured-badge">✦ <span data-i18n="featured">Destaque</span></div>
+      <div class="project-number">01 — Game</div>
+      <div class="project-name">Space Shooter</div>
+      <p class="project-desc" data-i18n="proj1_desc">Jogo de nave espacial totalmente funcional feito do zero em JavaScript puro com HTML5 Canvas. Animações fluidas, controles, inimigos e pontuação — sem nenhuma biblioteca externa.</p>
+      <div class="card-footer">
+        <div class="project-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML5 Canvas</span>
+          <span class="tag">Game Dev</span>
         </div>
-        <img id="gif-img-1" src="" alt="" style="display:none; width:100%; height:100%; object-fit:cover;">
-        <div class="gif-x" id="gif-x-1" onclick="removeGif(event, 1)">✕</div>
-        <input type="file" id="gif-file-1" accept="image/*" style="display:none;" onchange="loadGif(1, this)">
+        <div class="project-arrow">↗</div>
       </div>
-      <div class="card-body-inner">
-        <div class="featured-badge">✦ <span data-i18n="featured">Destaque</span></div>
-        <div class="project-number">01 — Game</div>
-        <div class="project-name">Space Shooter</div>
-        <p class="project-desc" data-i18n="proj1_desc">Jogo de nave espacial totalmente funcional feito do zero em JavaScript puro com HTML5 Canvas. Animações fluidas, controles, inimigos e pontuação — sem nenhuma biblioteca externa.</p>
-        <div class="card-footer">
-          <div class="project-tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">HTML5 Canvas</span>
-            <span class="tag">Game Dev</span>
-          </div>
-          <div class="project-arrow">↗</div>
-        </div>
-      </div>
-    </a>
+    </div>
+  </a>
 
     <!-- Card 2: Rock AI -->
     <a href="rocks/rocks_ai_overview.html" target="_blank" class="project-card reveal">
