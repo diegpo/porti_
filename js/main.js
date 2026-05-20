@@ -16,7 +16,7 @@ const T = {
     projects_label: 'Portfolio', projects_title_html: 'Featured<br>Projects', featured: 'Featured',
     proj1_desc: 'Fully functional spaceship game built from scratch using pure JavaScript with HTML5 Canvas. Smooth animations, controls, enemies, and scoring — without any external libraries.',
     proj2_desc: 'Exploration of AI applied to infrastructure analysis in Protheus environments. Combines visual intelligence with practical domains, showing how machine learning can support everyday operations.',
-    proj3_num: '03 — Coming Soon', proj3_name: 'Next Project', proj3_desc: 'Add the description here. Click to edit the text and upload a GIF above.', wip: 'Work in progress',
+    proj3_num: '03 — Coming Soon', proj3_name: 'Next Project', proj3_desc: 'I'm thinking about something, perhaps in ADVPL and Angular.', wip: 'Work in progress',
     gif_upload: 'Upload GIF', gif_btn: '+ gif / image',
     contact_label: 'Contact', contact_title_html: 'Let’s build<br>something together?', contact_sub: 'Open to freelance projects, collaborations, and opportunities.',
   },
@@ -36,8 +36,7 @@ const T = {
     projects_label: 'Portfólio', projects_title_html: 'Projetos<br>em Destaque', featured: 'Destaque',
     proj1_desc: 'Jogo de nave espacial totalmente funcional feito do zero em JavaScript puro com HTML5 Canvas. Animações fluidas, controles, inimigos e pontuação — sem nenhuma biblioteca externa.',
     proj2_desc: 'Exploração de IA aplicada à análise aplicada na infraestrutura Protheus. Une inteligência visual e domínios práticos, mostrando como machine learning pode atender o dia dia.',
-    proj3_num: '03 — Em breve', proj3_name: 'Próximo Projeto', proj3_desc: 'Adicione aqui a descrição. Clique para editar o texto e carregue um GIF acima.', wip: 'Em desenvolvimento',
-    gif_upload: 'Carregar GIF', gif_btn: '+ gif / imagem',
+    proj3_num: '03 — Em breve', proj3_name: 'Próximo Projeto', proj3_desc: 'Estou pensando em algo, em ADVPL talevz e Angular', gif_upload: 'Carregar GIF', gif_btn: '+ gif / imagem',
     contact_label: 'Contato', contact_title_html: 'Vamos construir<br>algo juntos?', contact_sub: 'Aberto a projetos freelance, colaborações e oportunidades.',
   },
   es: {
@@ -56,7 +55,7 @@ const T = {
     projects_label: 'Portafolio', projects_title_html: 'Proyectos<br>Destacados', featured: 'Destacado',
     proj1_desc: 'Juego de nave espacial totalmente funcional creado desde cero con JavaScript puro y HTML5 Canvas. Animaciones fluidas, controles, enemigos y puntuación — sin ninguna librería externa.',
     proj2_desc: 'Exploración de IA aplicada al análisis de infraestructura en entornos Protheus. Combina inteligencia visual con dominios prácticos, mostrando cómo el machine learning puede ayudar en las operaciones diarias.',
-    proj3_num: '03 — Próximamente', proj3_name: 'Próximo Proyecto', proj3_desc: 'Agrega aquí la descripción. Haz clic para editar el texto y cargar un GIF arriba.', wip: 'En desarrollo',
+    proj3_num: '03 — Próximamente', proj3_name: 'Próximo Proyecto', proj3_desc: 'Estoy pensando en algo, tal vez en ADVPL y Angular.', wip: 'En desarrollo',
     gif_upload: 'Subir GIF', gif_btn: '+ gif / imagen',
     contact_label: 'Contacto', contact_title_html: '¿Construimos<br>algo juntos?', contact_sub: 'Abierto a proyectos freelance, colaboraciones y oportunidades.',
   },
@@ -64,9 +63,9 @@ const T = {
 
 // ── TYPEWRITER PHRASES ─────────────────────────────────────────────────────────
 const phrases = {
-  en: ['Backend Developer', 'Java · Python · Go', 'AI Explorer', 'Game Dev Enthusiast', 'Builder of Hard Things'],
-  pt: ['Desenvolvedor Backend', 'Java · Python · Go', 'Explorador de IA', 'Entusiasta de Game Dev', 'Construtor de Coisas Difíceis'],
-  es: ['Desarrollador Backend', 'Java · Python · Go', 'Explorador de IA', 'Entusiasta de Game Dev', 'Constructor de Cosas Difíciles'],
+  en: ['Backend Developer', 'Java · Python · Go', 'AI Explorer', 'Game Dev Enthusiast', 'Protheus Infrastructure'],
+  pt: ['Desenvolvedor Backend', 'Java · Python · Go', 'Explorador de IA', 'Entusiasta de Game Dev', 'Infraestrutura Protheus'],
+  es: ['Desarrollador Backend', 'Java · Python · Go', 'Explorador de IA', 'Entusiasta de Game Dev', 'Infraestructura Protheus'],
 };
 
 // ── LANG ───────────────────────────────────────────────────────────────────────
