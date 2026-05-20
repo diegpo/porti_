@@ -1,4 +1,4 @@
-// ── TRANSLATIONS ──────────────────────────────────────────────────────────────
+// ── TRANSLATIONS Utilizadas─────────────────────────────────────────────────
 const T = {
   en: {
     nav_about: 'About', nav_projects: 'Projects', nav_contact: 'Contact',
@@ -22,7 +22,7 @@ const T = {
   },
   pt: {
     nav_about: 'Sobre', nav_projects: 'Projetos', nav_contact: 'Contato',
-    hero_tag: 'Disponível para novos desafios', hero_cta1: 'Ver projetos →', scroll: 'rolar',
+    hero_tag: 'Pronto para novos desafios', hero_cta1: 'Ver projetos →', scroll: 'rolar',
     about_label: 'Sobre mim', about_title_html: 'Desenvolvedor &amp;<br>Solucionador de Problemas',
     about_p1: 'Sou um desenvolvedor movido pela crença de que <strong>grande software nasce na intersecção entre curiosidade e disciplina</strong>. Minha base abrange linguagens de backend — Java, Python e Go — cada uma escolhida com propósito: Java para robustez e arquitetura empresarial, Python para pipelines de dados e experimentos com IA, Go para desempenho e concorrência limpa.',
     about_p2: 'Além do código, sou profundamente interessado na <strong>camada de infraestrutura</strong> — como sistemas se comunicam, escalam e falham graciosamente. Me importo com o quadro completo: do primeiro commit ao container rodando em produção.',
